@@ -7,7 +7,7 @@ import pygame as pg
 # clears if not confirmed
 # allow entry of more than one membership
 # store in file
-# allow searching stored users
+# allow searching stored users - test
 
 #>----------------------------------------------------------------<#
 
