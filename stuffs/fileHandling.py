@@ -1,0 +1,10 @@
+filename = open("quotes.txt", "r")
+x = filename.read()
+print(x)
+filename.close()
+
+filename = open("quotes.txt", "a")
+fimyFile = openRead(“sample.txt”)
+x = myFile.readLine()
+myFile.close())
+filename.close()
