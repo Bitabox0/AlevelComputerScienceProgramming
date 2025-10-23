@@ -34,6 +34,8 @@ textSurface = baseFont.render(userText, True, (255, 255, 255))
 
 screen.blit(textSurface, (inpRectangle.x+5, inpRectangle.y+5))
 
+inpRectangle.w = max(100, textSurface.get_width()+10)
+
 pg.draw.rect(screen, color, inpRectangle)
 pg.display.flip()
 
@@ -52,6 +54,15 @@ while running:
                 active = True
             elif inpRectangle.collidepoint(event.pos) and active:
                 active = False
+
+        if event.type == pg.KEYDOWN:
+
+            if event.type == pg.K_BACKSPACE:
+                userText = userText[:-1]
+
+            else:
+                userText = userText + event.unicode
+
     if active:
         color = colourActive
     else:
