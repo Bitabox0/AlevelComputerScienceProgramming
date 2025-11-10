@@ -52,5 +52,5 @@ def gameMenu():
             case 3:
                 print("in settings...")
             case 4:
-                ("quitting...")
+                print("quitting...")
 gameMenu()
