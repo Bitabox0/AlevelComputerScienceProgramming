@@ -1,17 +1,53 @@
 carSpaces = [
-    [1, 2, 3, 4, 5, 6],
-    [7, 8, 9, 10, 11, 12],
-    [13, 14, 15, 16, 17, 18],
-    [19, 20, 21, 22, 23, 24],
-    [25, 26, 27, 28, 29, 30],
-    [31, 32, 33, 34, 35, 36],
-    [37, 38, 39, 40, 41, 42],
-    [43, 44, 45, 46, 47, 48],
-    [49, 50, 51, 52, 53, 54],
-    [55, 56, 57, 58, 59, 60]
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"]
 ]
-x = 3
-y = 5
-print(carSpaces[x-1][y-1])
+
 
 #>--------------------------------<#
+
+def emptyCarPark():
+    for i in range(len(carSpaces)):
+        for j in range(len(carSpaces[i])):
+            carSpaces[i][j] = "i"
+        print(carSpaces[i])
+
+#>--------------------------------<#
+
+print("""
+      1. Reset all spaces in the car park to "empty"
+      2. Park a car
+      3. Remove a car
+      4. Display the car park grid
+      5. Quit
+""")
+option = input("enter your choice: ")
+while option != "5":
+    match option:
+        case "1":
+            emptyCarPark()
+#         #case "2":
+#             #parkACar()
+#         #case "3":
+#             #removeACar()
+#         #case "4":
+#             #DisplayGrid()
+#         case default:
+#             option = input("Invalid choice, please re-enter: ")
+    print("""
+      1. Reset all spaces in the car park to "empty"
+      2. Park a car
+      3. Remove a car
+      4. Display the car park grid
+      5. Quit
+    """)
+    option = input("Enter your choice: ")
+print("goodbye!")
