@@ -10,17 +10,31 @@ class LinkedList():
     def add(self, newData):
         return None
     
+    def traverseList(self):
+        # check if empty
+        # start at head
+        # output item
+        # got to next pointer
+        # output item
+        # repeat until end
+        if self.head == None:
+            print("the list is currently empty")
+        else:
+            while self.head != None:
+                print(myList.getHead().getData())
+
 #>------ NODE CLASS ------<#
 
 class Node:
+    # Constructor
     def __init__(self, data):
         self.data = data
         self.next = None
 
-    def getName(self):
+    def getData(self):
         return self.data
-    def setName(self, newData):
-        self.data = newData
+    # def setData(self, newData):
+    #     self.data = newData
     
     def getNext(self):
         return self.next
@@ -29,6 +43,7 @@ class Node:
 
 #>------ MAIN CODE ------<#
 
+#instantiated linked list with first person
 firstPerson = input("what us the first person in your list: ")
 myList = LinkedList(firstPerson)
 
@@ -37,18 +52,4 @@ print(myList.getHead())
 
 print(myList.getHead().getData())
 
-person1 = Node("bob")
-person2 = Node("john")
-person3 = Node("matt")
-person4 = person2
 
-print(person1)
-print(person2)
-print(person3)
-
-print(person1.getName())
-print(person2.getName())
-print(person3.getName())
-
-print(person4.getName())
-print
