@@ -7,21 +7,35 @@ class LinkedList():
     def getHead(self):
         return self.head
     
-    def add(self, newData):
-        return None
+    def add(self, data):
+        newNode = Node(data)
+        current = self.head
+        if self.head == None:
+            self.head = newNode
+        while current.getNext() != None:
+            current = current.getNext()
+        current.setNext(newNode)
     
     def traverseList(self):
-        # check if empty
-        # start at head
-        # output item
-        # got to next pointer
-        # output item
-        # repeat until end
-        if self.head == None:
+        current = self.head
+        if current == None:
             print("the list is currently empty")
         else:
-            while self.head != None:
-                print(myList.getHead().getData())
+            print(current.getData())
+            while current.getNext() != None:
+                current = current.getNext()
+                print(current.getData())
+
+    def remove(self, data):
+        current = self.head
+        if current.getData() == data:
+            current = current.getNext()
+        else:
+            while current.getNext().getData() != data:
+                current = current.getNext()
+            
+
+                
 
 #>------ NODE CLASS ------<#
 
@@ -47,9 +61,9 @@ class Node:
 firstPerson = input("what us the first person in your list: ")
 myList = LinkedList(firstPerson)
 
-print(myList)
-print(myList.getHead())
+myList.add("bob")
+myList.add("amy")
+myList.add("matt")
+myList.add("Quayon")
 
-print(myList.getHead().getData())
-
-
+print(myList.traverseList())

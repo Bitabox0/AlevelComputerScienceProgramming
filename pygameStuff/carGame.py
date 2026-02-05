@@ -4,7 +4,7 @@ import random
 
 #>--------------------------------------------------------------<#
 
-class Car():
+class Car(pg.sprite.Sprite):
     def __init__(self, width, height, colour, pos):
         self.width = width
         self.height = height
@@ -33,7 +33,9 @@ clock = pg.time.Clock()
 running = True
 dt = 0
 
-playerPos = pg.Vector2(screen.get_width() / 2, screen.get_height() / 2)
+playerPosX = pg.Vector2(screen.get_width() / 2)
+playerPosY = pg.Vector2(screen.get_height() / 2)
+
 
 while running:
     for event in pg.event.get():
@@ -42,4 +44,6 @@ while running:
 
     screen.fill("black")
 
-    pg.draw.rect(screen, car1.getWidth(), playerPos, car1.getHeight())
+    # pg.draw.rect(playerPosX, playerPosY, car1.getWidth(), car1.getHeight())
+
+    
