@@ -51,24 +51,24 @@ while running:
     drawPos = car1.getPos() - car1.centre
     car = pg.draw.rect(screen, car1.getColour(), (*drawPos, car1.getWidth(), car1.getHeight()))
 
-    keys = pg.key.get_pressed()
-    if keys[pg.K_w]:
-        drawPos.y -= 300 * dt
-    if keys[pg.K_s]:
-        drawPos.y += 300 * dt
-    if keys[pg.K_a]:
-        drawPos.x -= 300 * dt
-    if keys[pg.K_d]:
-        drawPos.x += 300 * dt
+    # keys = pg.key.get_pressed()
+    # if keys[pg.K_w]:
+    #     drawPos.y -= 300 * dt
+    # if keys[pg.K_s]:
+    #     drawPos.y += 300 * dt
+    # if keys[pg.K_a]:
+    #     drawPos.x -= 300 * dt
+    # if keys[pg.K_d]:
+    #     drawPos.x += 300 * dt
     
-    # borderX = (car1.getCentre(), screen.get_width() - car1.getCentre())
-    # borderY = (car1.getCentre(), screen.get_height() - car1.getCentre())
+    # # borderX = (car1.getCentre(), screen.get_width() - car1.getCentre())
+    # # borderY = (car1.getCentre(), screen.get_height() - car1.getCentre())
 
     # drawPos.x = max(car1.getCentre(),
-    #                min(drawPos.x, screen.get_width() - car1.getCentre()))
+    #                min(drawPos.x, screen.get_width() - car1.getCentre()).)
 
     # drawPos.y = max(car1.getCentre(),
-    #                min(drawPos.y, screen.get_height() - car1.getCentre()))
+    #                min(drawPos.y, screen.get_height() - car1.getCentre())[0])
 
 
 
