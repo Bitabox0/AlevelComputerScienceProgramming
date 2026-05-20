@@ -1,13 +1,14 @@
-parking = [["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"],
-        ["empty", "empty", "empty", "empty", "empty", "empty"]]
+parking = [
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"],
+    ["empty", "empty", "empty", "empty", "empty", "empty"]]
 
 YgridRef = int(input("enter the row the car was parked: "))
 XgridRef = int(input("enter the Column the car was parked: "))
