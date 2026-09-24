@@ -15,16 +15,6 @@ def isempty():
 def checksize():
     print(len(letters))
 
-# isempty()
-# add("E")
-# add("Y")
-# print(letters)
-# isempty()
-# remove()
-# add("T")
-# checksize()
-# print(letters)
-
 word = input("enter world to check: ")
 print(word)
 

@@ -30,3 +30,4 @@ pop()
 push("data")
 push("data")
 isfull()
+
