@@ -25,11 +25,11 @@ class Character(): # defines attributes of the character class
 
     def movement(self, dt): # defines all the base movement keys
         keys = pg.key.get_pressed()
-        if keys[pg.K_w]:
+        if keys[pg.K_s]:
             self.y += self.speed * dt
         if keys[pg.K_a]:
             self.x -= self.speed * dt
-        if keys[pg.K_s]:
+        if keys[pg.K_w]:
             self.y -= self.speed * dt
         if keys[pg.K_d]:
             self.x += self.speed * dt
