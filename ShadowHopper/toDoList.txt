@@ -1,0 +1,13 @@
+To be done:
+
+- create map
+- create shadows
+- create menu
+- create sprites
+- create moveable objects
+- create collectables
+
+Completed:
+
+- Main game loop
+- character controllable around the screen

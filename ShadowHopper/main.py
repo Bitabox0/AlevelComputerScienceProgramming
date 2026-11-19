@@ -1,6 +1,6 @@
 import pygame as pg
-import math
-from classes import Character, Light
+from classes import Character
+from light import Light
 
 width = 1280
 height = 700
@@ -11,7 +11,7 @@ def main():   #subroutine that is the main game loop
     running = True
 
     player = Character("red", 20, width / 2, height / 2)
-    lightTest = Light(30, 60, "blue", 600, 700)
+    lightTest = Light(30, 100, "blue", 600, 700, 90)
     dt = 0
 
     while running == True:
@@ -19,9 +19,10 @@ def main():   #subroutine that is the main game loop
             if event.type == pg.QUIT:
                 running = False     #functions would be called here in the main loop
 
-        lightTest.drawLight(themenuScreen)
+        
         
         themenuScreen.fill("black")
+        lightTest.drawLight(themenuScreen)
 
         player.draw(themenuScreen)
         player.movement(dt)
